@@ -1,7 +1,7 @@
 def turn_count(board)
   turn = 0
   board.each do |item|
-    (item === "X" || item === "O") ? turn += 1 : pass
+    (item === "X" || item === "O") ? turn += 1 : next
     #if item === "X" || item === "O"
     #  turn += 1
     #end
