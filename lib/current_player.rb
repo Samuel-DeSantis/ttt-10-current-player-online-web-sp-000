@@ -1,7 +1,7 @@
 def turn_count(board)
   turn = 0
   board.each { |item| (item === "X" || item === "O") ? turn += 1 : next}
-  return turn
+  turn
 end
 
 def current_player(board)
